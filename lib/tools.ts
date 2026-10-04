@@ -10,6 +10,15 @@ export const TOOLS: Tool[] = [
     meta: "Reduce JPG, PNG and WebP image sizes directly in your browser without uploading your files.", category: "Compress", mode: "compress", icon: "⇣" },
   { slug: "image-resizer", name: "Image Resizer", desc: "Resize images to exact dimensions in seconds.", h1: "Resize Images Online for Free",
     meta: "Resize images to exact pixel dimensions or social media presets, right in your browser.", category: "Resize", mode: "resize", icon: "⤢" },
+   conv(
+  "text-to-pdf",
+  "Text to PDF",
+  "Text",
+  "PDF",
+  "text/plain",
+  "application/pdf" as any,
+  "Convert plain text, code, or HTML files directly into PDF documents."
+),
   conv("jpg-to-png", "JPG to PNG", "JPG", "PNG", "image/jpeg", "image/png", "Convert JPG images to PNG format instantly."),
   conv("png-to-jpg", "PNG to JPG", "PNG", "JPG", "image/png", "image/jpeg", "Convert PNG images to JPG format quickly."),
   conv("jpg-to-webp", "JPG to WebP", "JPG", "WebP", "image/jpeg", "image/webp", "Convert JPG images into smaller WebP files."),

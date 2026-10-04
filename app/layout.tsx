@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 const font = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "PixelTools: Free Image Tools. Fast, Private, and Simple.",
+  title: "PixelTools Free Image Tools",
   description:
     "Compress, resize and convert your images directly in your browser. No uploads. No registration.",
 };
