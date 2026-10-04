@@ -20,7 +20,6 @@ export default function Home() {
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{TOOLS.map((t) => <ToolCard key={t.slug} tool={t} />)}</div>
       </section>
      <section className="mx-auto mt-28 max-w-5xl px-4">
-  {/* Header */}
   <div className="text-center">
     <span className="text-xs font-bold uppercase tracking-wider text-brand">
       Simple Process
@@ -33,32 +32,25 @@ export default function Home() {
     </p>
   </div>
 
-  {/* Steps Grid */}
   <ol className="mt-12 grid gap-6 sm:grid-cols-3">
     {STEPS?.map(([i, t, d], index) => (
       <li
         key={t}
         className="group relative flex flex-col items-center rounded-2xl border border-slate-200/80 bg-white p-6 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand/40 hover:shadow-xl hover:shadow-brand/10"
       >
-        {/* Step Number Badge */}
         <span className="absolute right-4 top-4 text-xs font-extrabold text-slate-300 transition-colors group-hover:text-brand/60">
           0{index + 1}
         </span>
-
-        {/* Icon Container */}
         <span
           aria-hidden
           className="grid h-12 w-12 place-items-center rounded-xl bg-brand-soft text-xl text-brand transition-all duration-300 group-hover:scale-105 group-hover:bg-brand group-hover:text-white group-hover:shadow-md group-hover:shadow-brand/20"
         >
           {i}
         </span>
-
-        {/* Title */}
         <h3 className="mt-5 text-lg font-bold text-slate-900 transition-colors duration-200 group-hover:text-brand">
           {t}
         </h3>
 
-        {/* Description */}
         <p className="mt-2 text-sm leading-relaxed text-slate-600">
           {d}
         </p>
